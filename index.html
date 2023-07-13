@@ -1,115 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discord struttura</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.cdnfonts.com/css/gg-sans-2" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/gg-sans-2" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Pagina Iniziale</title>
 </head>
-
-<body class="debug">
-  <header>
-    <div class=" d-flex py-3">
-      <div class="logo"><img src="img/logo.svg" alt=""></div>
-      <div class="menu">
-        <div class="central_menu">
-            <span>Scarica</span>
-            <span>Perché Discord</span>
-            <span>Nitro</span>
-            <span>Sicurezza</span>
-            <span>Assistenza</span>
-        </div>
-      </div>
-      <div class="login"><button>Accedi</button></div>
-    </div>
-  </header>
-  <main>
-    <div class="jumbotron">
-      <div class="container-sm">
-        <h1>Il tuo posto per parlare</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto veniam recusandae unde animi fuga hic suscipit, et repudiandae iusto voluptatem iste, voluptatum voluptates, temporibus saepe itaque possimus debitis alias?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio quos, repudiandae tempore soluta dicta 
-        </p>
-        <div class=".d-flex">
-          <button id="hero_button_1"> &#x2B07; Scarica per Mac</button>
-          <button id="hero_button_2"> Apri Discord nel tuo browser</button>
-        </div>
-      </div>
-    </div>
-    <!-- /.jumbotron -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <div class="card">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore, quidem voluptatum odit quasi ea expedita, libero quas modi sint voluptate, quam vitae atque minus nemo adipisci illum nesciunt. Aspernatur.
+<body>
+    <header>
+        <div class="container d-flex py-3">
+            <div class="logo">
+                <a href="">
+                    <img src="./img/logo.svg" alt="">
+                </a>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis hic voluptatem corpori
+            <div class="menu">
+                <ul class="lista-menu">
+                    <li><a href="">Scarica</a></li>
+                    <li><a href="">Perché Discord</a></li>
+                    <li><a href="">Nitro</a></li>
+                    <li><a href="">Sicurezza</a></li>
+                    <li><a href="">Assistenza</a></li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg_section">
-      <div class="container ">
-        <div class="row">
-          <div class="col-4">
-            <div class="card"></div>
-          </div>
-          <div class="col-8">
-            <div class="card"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <div class="card"></div>
-          </div>
-          <div class="col-4">
-            <div class="card"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg_section">
-      <div class="container h-50">
-
-      </div>
-    </section>
-
-  </main>
-  <footer>
-    <div class="top">
-      <div class="container">
-        <div class="row">
-          <div class="col-4"></div>
-          <div class="col-8">
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
+            <div class="login">
+                <a href="#" id="login-button">Accedi</a>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <hr>
-    <div class="bottom">
-      <div class="container d-flex justify-content-between">
-        <div class="logo">logo</div>
-        <div class="login">button</div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </header>
+    
+    <main>
+        <div class="jumbotron">
+        <div class="container-sm">
+            <h1>Il tuo posto per parlare</h1>
+            <p>
+                Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale,
+                o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, 
+                Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.
+            </p>
+            <div>
+                <button class="buttons" id="mac-download">
+                    <i class="fa-solid fa-down-long"></i>
+                    <a href="">Scarica per Mac</a>
+                </button>
+                
+                <button class="buttons" id="open-in-browser">
+                   <a href="">Apri Discord nel tuo browser</a>
+                </button>
+            </div>
+        </div>
+            
+        </div>
+        <!-- /.jumbotron -->
+        <section>
+        <div class="container">
+             <div class="row">
+                <div class="col-8">
+                    <div class="card">
+                      <img src="./img/item1.svg" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="jumbo-text">
+                    <h1>
+                        Un luogo a invito con tutto lo spazio necessario per parlare 
+                    </h1>
+                    <p>
+                        I server Discord sono organizzati in canali tematici in cui puoi collaborare,
+                        condividere o semplicemente parlare della tua giornata senza intasare una char
+                        di gruppo.
+                    </p>
+                </div>
+                    
+            </div>
+            </div>
+        </div>
+        </section>
+        
+        <section class="bg_section second-section">
+            <div class="container"> 
+                <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <h1>Dove trovarsi è facile</h1>
+                        <p>
+                            Mettiti comodo in un canale vocale quando hai tempo.
+                            Gli amici nel tuo server possono vedere che sei lì e 
+                            unirsi istantaneamente senza dover chiamare
+                        </p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card">
+                        <img src="./img/item2.svg" alt="">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                <div class="col-8">
+                    <div class="card"></div>
+                </div>
+                <div class="col-4">
+                    <div class="card"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg_section">
+            <div class="container h-50">
+            </div>
+        </section>
+    
+    </main>
+         <footer>
+            <div class="top">
+            <div class="container">
+                <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <div class="bottom">
+            <div class="container d-flex justify-content-between">
+                <div class="logo">logo</div>
+                <div class="login">button</div>
+            </div>
+            </div>
+        </footer>
+    </body>
 </html>
